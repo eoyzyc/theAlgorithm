@@ -1,0 +1,10 @@
+def bubblesort(numList):
+    for i in range(len(numList)):
+        for j in range(len(numList)-1):
+            if numList[j] > numList[j+1]:
+                numList[j], numList[j+1] = numList[j+1], numList[j]
+                
+numList = [6,4,7,4,9,2,1]
+bubblesort(numList)
+
+print(numList)
